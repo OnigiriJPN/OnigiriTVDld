@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ダウンロードページ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- メインラッパー -->
+  <div class="downloadPage-wrapper">
+    <iframe src="./Syousai.html" frameborder="0" class="Syousai"></iframe>
+    <a href="Asset\NoBuilded\NLB.zip" class="Tagl">
+      <button class="TagLink">ライブラリをダウンロード（自分でビルドする必要あり）</button>
+    </a>
+    <a href="Asset\Builded\NLB.zip">
+      <button>ビルド済みのライブラリをダウンロード</button>
+    </a>
+  </div>
+  <!-- JavaScriptが許可されなかった時 -->
+  <noscript>
+    <div class="noscriptMain">
+      <a href="NoneScriptWarning.txt" download="NoneScriptWarning.txt">
+        <button class="TagLink">ライブラリをダウンロード</button>
+      </a>
+      <style media="screen">
+        .Tagl{
+          display: none;
+        }
+      </style>
+    </div>
+  </noscript>
+</body>
+</html>
